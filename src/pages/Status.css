@@ -1,0 +1,64 @@
+.answer-tweet-form {
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+.answer-tweet-form label {
+  display: flex;
+  gap: 0.75rem;
+  flex: 1;
+}
+.answer-tweet-form label .avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+}
+.answer-tweet-form label textarea {
+  flex: 1;
+  font-size: 1.25rem;
+  border: 0;
+  font-weight: 500;
+  resize: none;
+  margin-top: 0.75rem;
+  color: var(--textArea-color);
+  background: unset;
+}
+.answer-tweet-form label textarea:focus {
+  outline: none;
+}
+.answer-tweet-form label textarea::placeholder{
+  color: var(--textArea-color);
+}
+.answer-tweet-form button {
+  background: var(--tweet-blue);
+  color: #fff;
+  margin-left: auto;
+  border: 0;
+  padding: 0.85rem 1.5rem;
+  font-weight: 500;
+  border-radius: 9999px;
+}
+.answer-tweet-form button:hover{
+  filter: brightness(0.9);
+}
+.answer-tweet-form button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .answer-tweet-form label textarea {
+    font-size: 1rem;
+  }
+  .answer-tweet-form button {
+    padding: 1rem;
+  }
+  .answer-tweet-form button span {
+    display: none;
+  }
+  .answer-tweet-form button svg {
+    display: block;
+  }
+}

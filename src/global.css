@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+:root {
+  --tweet-blue: #1da1f2;
+}
+body.light-theme {
+  transition: all ease-in-out;
+  --body-backGround: #fff;
+  --navLink-Color: #334;
+  --navLogo-Color: #1da1f2;
+
+  --header-title-color: #334;
+  --textArea-color: #334;
+
+  --userName-color: #000;
+  --tweet-color: #334;
+  --tweet-icons-color: #89a2b8;
+
+  --separator-backGround: #fbfbfb;
+  --general-border-color: #ebebeb;
+}
+body.dark-theme {
+    transition: all ease-in-out;
+  --body-backGround: #121214;
+  --navLink-Color: #fff;
+  --navLogo-Color: #1da1f2;
+
+  --header-title-color: #fff;
+
+  --textArea-color: #fff;
+  --textArea-backGround: #262626;
+
+  --userName-color: #fff;
+  --tweet-color: #fff;
+  --tweet-icons-color: #89a2b8;
+
+  --separator-backGround: #242424;
+  --general-border-color: #242424;
+}
+body {
+  background: var(--body-backGround);
+  -webkit-font-smoothing: antialiased;
+  --separator-backGround: #fbfbfb;
+  --general-border-color: #ebebeb;
+}
+button {
+  cursor: pointer;
+}
+a {
+  color: inherit;
+}
+body, input, textarea, button {
+  font: 400 1rem sans-serif;
+}

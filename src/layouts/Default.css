@@ -1,0 +1,19 @@
+/* page: homePage */
+.layout {
+  margin:0 auto;
+  max-width: 1050px;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+.content {
+  border-left: 1px solid var(--general-border-color);
+  border-right: 1px solid var(--general-border-color);
+}
+
+@media (max-width: 780px){
+  .layout {
+    grid-template-columns: 80px 1fr;
+  }
+}
